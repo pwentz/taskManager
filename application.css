@@ -1,25 +1,25 @@
 body {
-}
-#background {
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-image: url('assets/forest.jpg');
+  background-image: url('assets/beach.jpg');
   background-position: center;
   background-size: center;
-  opacity: 0.8;
 }
 #header-text{
   margin-top: 35px;
-  color: white;
   font-family: Raleway;
   text-align: center;
   font-size: 45px;
 }
-#task-container {
+#input-container {
   height: 250px;
+  width: 600px;
+  background-color: #d9d9d9;
+  border-radius: 12px 12px 12px 12px;
+}
+#tasks {
+  height: 100%
+}
+.task-container {
+  height: 100px;
   width: 600px;
   background-color: #d9d9d9;
   border-radius: 12px 12px 12px 12px;
