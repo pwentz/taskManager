@@ -7,7 +7,6 @@ function markAsComplete(task) {
 
 function strikeWords(task) {
   if ($(task).find('.fi-x').hasClass('hide')) {
-    saveStatus(task)
     $(task).find('.task-head').wrap('<strike>');
     $(task).find('.task-body').wrap('<strike>');
   }
