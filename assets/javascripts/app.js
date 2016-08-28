@@ -31,6 +31,11 @@ $(document).ready( () => {
     let chosenTask = event.target.closest('.task-container');
     destroyTask(chosenTask);
   })
+
+  $('.completed').on('click', () => {
+    let chosenTask = event.target.closest('.task-container');
+    markAsComplete(chosenTask);
+  })
 })
 
 function verifyCount() {
