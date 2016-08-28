@@ -3,31 +3,66 @@ body {
   background-position: center;
   background-size: center;
 }
+
 #header-text{
   margin-top: 35px;
+  color: white;
   font-family: Raleway;
   text-align: center;
   font-size: 45px;
 }
+
 #input-container {
-  height: 250px;
+  height: 350px;
   width: 600px;
   background-color: #d9d9d9;
   border-radius: 12px 12px 12px 12px;
 }
+
+#input-container input {
+  margin-top: 30px;
+}
+
+#task-description {
+  height: auto;
+}
+
 #tasks {
   height: 100%
 }
+
 .task-container {
-  height: 100px;
+  height: 175px;
   width: 600px;
+  margin-top: 15px;
   background-color: #d9d9d9;
   border-radius: 12px 12px 12px 12px;
 }
+
 .filler {
-  height: 80px;
+  height: 50px;
 }
+
+.task-filler {
+  height: 35px;
+}
+
 .btn-container {
   margin-top: 15px;
 }
 
+#task-head {
+  text-align: center;
+  font-family: Raleway;
+}
+
+#task-body {
+  text-align: center;
+  font-family: Raleway;
+}
+.hide {
+  display: none;
+}
+.save-edit {
+  width: 100%;
+}

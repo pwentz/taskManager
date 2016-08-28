@@ -8,18 +8,22 @@
     <link rel='stylesheet' type='text/css' href='application.css'>
   </head>
   <body>
-    <h3 id='header-text'>Welcome to Task Manager!</h3>
+    <h3 id='header-text'>Welcome to the Task Manager</h3>
     <div class='filler'>
     </div>
     <div class='row' id='input-container'>
       <div class='small-8 small-centered columns'>
-        <div class='filler'>
-        </div>
-        <input type='text' placeholder='Enter a task here!' id='task-input'>
+        <input type='text' placeholder='name' id='task-name'>
+        <textarea id='task-description' placeholder='description'></textarea>
         <div class='row'>
           <div class='small-4 small-centered columns btn-container'>
             <button type='submit' class='success button add-task'>
-              Click me!
+              Add Task
+            </button>
+          </div>
+          <div class='small-4 columns btn-container'>
+            <button type='submit' class='alert button delete-all'>
+              Clear tasks
             </button>
           </div>
         </div>
@@ -31,6 +35,8 @@
     </div>
   </body>
 </html>
+<script src='assets/javascripts/deleteAllTasks.js'></script>
 <script src='assets/javascripts/createTask.js'></script>
 <script src='assets/javascripts/taskIndex.js'></script>
+<script src='assets/javascripts/editTask.js'></script>
 <script src='assets/javascripts/app.js'></script>
