@@ -60,3 +60,9 @@ body {
   text-align: center;
   font-family: Raleway;
 }
+.hide {
+  display: none;
+}
+.save-edit {
+  width: 100%;
+}

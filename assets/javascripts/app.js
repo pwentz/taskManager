@@ -18,7 +18,13 @@ $(document).ready( () => {
 
   $('.edit-task').on('click', () => {
     let taskToEdit = event.target.closest('.row')
-    editTask(taskToEdit)
+    toggleForms(taskToEdit);
+    prefillInputs(taskToEdit);
+  });
+
+  $('.save-edit').on('click', () => {
+    let updatedTask = event.target.closest('.row')
+    updateTask(updatedTask);
   });
 })
 
