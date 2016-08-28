@@ -15,6 +15,9 @@ function taskHTML(name, desc, key) {
   return `<div class='row'>
     <div id='${key}' class='small-8 small-centered columns task-container'>
      <div class='task-filler'>
+      <i class='fi-check hide'></i>
+      <i class='fi-x'></i>
+      <input type='checkbox' class='completed'>
      </div>
      <input class='edit-name hide'>
      <h5 class='task-head'>${name}</h5>
