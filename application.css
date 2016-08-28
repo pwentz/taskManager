@@ -6,8 +6,9 @@ body {
 
 #header-text{
   margin-top: 35px;
-  color: white;
+  color: #1852ac;
   font-family: Raleway;
+  font-weight: 300;
   text-align: center;
   font-size: 45px;
 }
@@ -50,13 +51,15 @@ body {
 .btn-container {
   margin-top: 15px;
 }
+.row .btn-container {
+}
 
-#task-head {
+.task-head {
   text-align: center;
   font-family: Raleway;
 }
 
-#task-body {
+.task-body {
   text-align: center;
   font-family: Raleway;
 }

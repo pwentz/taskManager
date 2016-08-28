@@ -17,15 +17,20 @@ $(document).ready( () => {
   })
 
   $('.edit-task').on('click', () => {
-    let taskToEdit = event.target.closest('.row')
+    let taskToEdit = event.target.closest('.task-container');
     toggleForms(taskToEdit);
     prefillInputs(taskToEdit);
   });
 
   $('.save-edit').on('click', () => {
-    let updatedTask = event.target.closest('.row')
+    let updatedTask = event.target.closest('.task-container');
     updateTask(updatedTask);
   });
+  
+  $('.delete-task').on('click', () => {
+    let chosenTask = event.target.closest('.task-container');
+    destroyTask(chosenTask);
+  })
 })
 
 function verifyCount() {
@@ -33,11 +38,13 @@ function verifyCount() {
     localStorage.tasks = 0;
   }
 }
+
 function verifyEmpty() {
   if (localStorage.length > 1) {
     fetchTasks();
   }
 }
+
 function clearInput() {
   $('#task-name').val('')
   $('#task-description').val('')

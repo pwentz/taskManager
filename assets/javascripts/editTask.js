@@ -23,6 +23,6 @@ function updateTask(updatedTask) {
   saveTask(updatedTask, [newName, newDesc]);
 }
 function saveTask(updatedTask, taskData) {
-  let key = $(updatedTask).closest('.row').attr('id');
+  let key = $(updatedTask).closest('.task-container').attr('id');
   localStorage.setItem(key, taskData);
 }
