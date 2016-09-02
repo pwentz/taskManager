@@ -39,13 +39,15 @@ function addTask() {
 
 function deleteAll() {
   $('.delete-all').on('click', () => {
-    localStorage.clear();
-    hideTasks();
+    if (confirm('Are you sure?')) {
+      localStorage.clear();
+      hideTasks();
+    }
   })
 }
 
 function editTask() {
-  $('.edit-task').on('click', () => {
+  $('#tasks').on('click', '.edit-task', () => {
     let taskToEdit = event.target.closest('.task-container');
     toggleForms(taskToEdit);
     prefillInputs(taskToEdit);
@@ -53,21 +55,21 @@ function editTask() {
 }
 
 function saveEdit() {
-  $('.save-edit').on('click', () => {
+  $('#tasks').on('click', '.save-edit', () => {
     let updatedTask = event.target.closest('.task-container');
     updateTask(updatedTask);
   });
 }
 
 function deleteTask() {
-  $('.delete-task').on('click', () => {
+  $('#tasks').on('click', '.delete-task', () => {
     let chosenTask = event.target.closest('.task-container');
     destroyTask(chosenTask);
   })
 }
 
 function completeTask() {
-  $('.completed').on('click', () => {
+  $('#tasks').on('click', '.completed', () => {
     let chosenTask = event.target.closest('.task-container');
     markAsComplete(chosenTask);
   })
