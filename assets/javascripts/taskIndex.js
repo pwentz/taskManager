@@ -4,6 +4,9 @@ function fetchTasks() {
       let rawTask = localStorage.getItem(Number(key))
       let name = rawTask.split(',')[0]
       let desc = rawTask.split(',')[1]
+      console.log(rawTask);
+      console.log(name);
+      console.log(desc);
       $('#tasks').append(
         taskHTML(name, desc, key)
       )
